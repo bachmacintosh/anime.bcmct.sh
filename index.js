@@ -10,7 +10,10 @@ async function handleRequest(event) {
   if (event.request.method === "GET") {
     let commitToWatch = await KV.get("commit-to-watch");
     return new Response(commitToWatch, {
-      headers: { "content-type": "application/json" },
+      headers: {
+        "content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
     });
   } else if (event.request.method === "POST") {
     const { headers } = event.request;
