@@ -1,0 +1,13 @@
+name = "anime"
+type = "javascript"
+
+account_id = "a1d46f5c53a37a75f82cd8e320855c37"
+workers_dev = true
+
+kv_namespaces = [
+    {binding = "KV", id = "4bf5af795b1d4e63af7c7ad372b0cd91", preview_id = "f686a7d1cb4e4e44934e04a84698b707"}
+]
+compatibility_date = "2022-03-01"
+
+# [secrets]
+# REFRESH_SECRET
