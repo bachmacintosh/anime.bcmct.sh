@@ -98,7 +98,10 @@ async function fetchAnime() {
 async function fetchGraphQL(query) {
   return fetch("https://graphql.anilist.co/", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${ANILIST_TOKEN}`,
+    },
     body: JSON.stringify({ query }),
   }).then(response => {
     return response.json();

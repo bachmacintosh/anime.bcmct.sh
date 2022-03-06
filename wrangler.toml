@@ -11,3 +11,4 @@ compatibility_date = "2022-03-01"
 
 # [secrets]
 # REFRESH_SECRET
+# ANILIST_TOKEN
